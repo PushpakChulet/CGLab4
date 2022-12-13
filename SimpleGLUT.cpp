@@ -242,7 +242,7 @@ void r2(int index)
 		all[2] += boidsM[i][14];
 		for (int j = 0; j < 3; ++j)
 		{
-			center[j] = (all[j] - boidsM[index][12]) / (number_boids - 1);
+			center[j] = (all[j] - boidsM[index][12 + j]) / (number_boids - 1);
 		}
 	}
 
